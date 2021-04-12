@@ -6,4 +6,3 @@ script:
   - docker build -t mannydesigns/node .
   - docker images mannydesigns/node
 
-before_deploy:
