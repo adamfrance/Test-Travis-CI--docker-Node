@@ -6,3 +6,10 @@ script:
   - docker build -t mannydesigns/node .
   - docker images mannydesigns/node
 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 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
+  local_dir: build
+  on:
+    branch: master
